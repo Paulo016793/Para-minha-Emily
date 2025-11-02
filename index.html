@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Declaração — Noiva Cadáver</title>
+
+  <!-- Fonte gótica -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" role="main" aria-label="Declaração noiva cadáver">
+    <div class="left" aria-hidden="true">
+
+      <!-- Imagem principal -->
+      <img src="https://i.pinimg.com/originals/2b/4f/2d/2b4f2d79f3b8aaf4e56d1671a6a8c758.png"
+           alt="Emily - Noiva Cadáver" class="portrait">
+
+      <div class="title">A minha Noiva Cadáver</div>
+      <div class="muted">Um sussurro do além — para quem me roubou o coração.</div>
+    </div>
+
+    <div style="position:relative; z-index:2">
+      <span class="bigline">Minha querida,</span>
+
+      <p class="text">
+        <span class="typewriter">Quando penso em você vejo a luz fria das lâmpadas antigas, o riso que quebra a noite e a delicadeza de um segredo guardado entre ossos e flores. Você chegou dos meus sonhos mais sombrios e transformou meu medo em coragem — e minha solidão, em um lar.</span>
+      </p>
+
+      <p class="text" style="margin-top:12px;"><i>
+        Gosto do jeito que sua sombra dança com a minha, como se já tivéssemos </i><i>prometido tudo num passado que só nós lembramos. Aceita minha promessa: serei teu guardião entre eras, teu riso quando o mundo voltar a dormir, e tua mão, mesmo que o tempo nos desfaça.
+      </i></p>
+
+      <div class="controls">
+        <button class="btn btn-play" id="playBtn" aria-pressed="false" title="Tocar música">
+          ▶︎ Tocar música
+        </button>
+
+        <button class="btn" id="show-note">Ler nota secreta</button>
+
+        <div style="margin-left:auto; text-align:right;">
+          <div style="font-size:13px; color:var(--muted)">Assinado,</div>
+          <div style="font-family:'Cinzel', serif; font-size:18px; color:var
+          (--accent);">— Seu eterno Victor</div>
+        </div>
+      </div>
+
+      <div id="secret" style="display:none;">
+        <div class="note">
+          Prometo visitar o seu túmulo com flores de papel, contar estrelas e lembrar o som do seu nome até que as lápides se tornem jardim.
+        </div>
+      </div>
+    </div>
+
+    <div class="spirit" aria-hidden="true">
+      <i>❤</i><i>❦</i><i>✵</i><i>❤</i><i>❦</i><i>✵</i><i>❤</i>
+    </div>
+  </div>
+
+  <!-- Player de música -->
+  <audio id="track" preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio embutido.
+  </audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
